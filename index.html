@@ -1,9 +1,158 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portofolio Daffi</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <header class="nav-container">
+            <div class="logo-icon"></div>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#ourAffiliates">Our Affiliates</a>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#messageUS">Message Us</a>
+            </nav>
+        </header>
+        <hr />
+
         
+         <main>
+            <!-- Ini Home Content -->
+             <section id="home">
+              <header class="home-title">
+                <h1>Hi User, Wekcome to Website </h1>
+                <h2>Find Your Cat Cafe to Relax</h2>
+              </header>
+
+              <article>
+                <p>Ini adalah website latihan pertama</p>
+                <div>
+                    <div class="images">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipP3lMWV3LcR3AmUoVc1ERiJz7oyNOqezmadtXrj=s1360-w1360-h1020" />
+                    </div>
+                </div>
+                
+             </article>
+             </section>
+
+             <hr />
+
+           
+
+            <!-- Ini Our Affiliates -->
+             <section id="ourAffiliates">
+                <header>
+                    <h1>Our Affiliates</h1>
+                </header>
+                
+                <article class="profile-content">
+
+                    <div class="profile-item">
+                        <div class="Profile-icon profile-1"></div>
+                    <p>Cat Cabin Jakarta Selatan</p>
+                    <a href="https://g.co/kgs/KD7rkLZ">Lihat</a>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="Profile-icon profile-2"></div>
+                    <p>BIlik Kucing Depok</p>
+                    <a href="https://g.co/kgs/GPjpCnY">Lihat</a>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="Profile-icon profile-3"></div>
+                    <p>Groovy Cat Cafe Tangerang</p>
+                    <a href="https://g.co/kgs/KRvf2QX">Lihat</a>
+                    </div>
+
+
+                </article>
+             </section>
+
+             <hr />
+
+            <!-- Ini Portofolio Content -->
+            <section id="portofolio">
+                <header>
+                    <h1>Have a Look Inside</h1>
+                    <article>
+                        <div class="gambar-portofolio">
+                            <img src="https://lh3.googleusercontent.com/p/AF1QipPsOYmWFITsKkQlk72BU1acf0VPGGDM4lAAZI55=s1360-w1360-h1020"/>
+                        </div>
+                        
+                    </article>
+                </header>
+        
+            </section>
+            
+            <hr />
+
+            <!-- Ini Message Us -->
+            <div class="form-container" id="messageUS">
+                <h2>Hubungi Kami</h2>
+                <form name="message-form" onsubmit="return validateForm()">
+                  <table>
+                    <tr>
+                      <td>Nama</td>
+                      <td>:</td>
+                      <td><input id="name" class="a" type="text" name="name" placeholder="Masukkan nama Anda" required /></td>
+        
+                    </tr>
+                    <tr>
+                      <td>Nomor HP</td>
+                      <td>:</td>
+                      <td><input id="nomorHP" class="a" type="text" name="nomorHP" placeholder="Nomor HP" pattern="[0-9]*" required /></td>
+                    </tr>
+                    <tr>
+                      <td>Tanggal Reservasi</td>
+                      <td>:</td>
+                      <td><input id="tanggal" class="a" type="date" name="tanggal" placeholder="Tanggal" required /></td>
+                    </tr>
+                    <tr>
+                      <td>Jumlah Orang</td>
+                      <td>:</td>
+                      <td>
+                        <input type="radio" name="jumlahOrang" id="1" value="1" required />
+                        <label for="1">1</label>
+                        <input type="radio" name="jumlahOrang" id="2-4" value="2-4" required />
+                        <label for="2-4">2 Sampai 4</label>
+                        <input type="radio" name="jumlahOrang" id=">4" value=">4" required />
+                        <label for=">4">Lebih dari 4</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="b">Pesan</td>
+                      <td class="b">:</td>
+                      <td><textarea id="messages" class="d" cols="30" rows="10" required></textarea></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">
+                        <input class="a submit-button" type="submit" value="Kirim" />
+                        <button type="button" class="reset-button" onclick="resetForm()"><i class="fas fa-trash"></i> Hapus</button>
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+                <div class="hasil-data">
+                    <p>Nama: <span id="sender-name"></span></p>
+                    <p>Nomor HP: <span id="sender-nomorHP"></span></p>
+                    <p>Tanggal Reservasi: <span id="sender-tanggal"></span></p>
+                    <p>Jumlah Orang: <span id="sender-jumlahOrang"></span></p>
+                    <p>Pesan: <span id="sender-messages"></span></p>
+                </div>
+                <div class="divider"></div>
+              </div>
+
+         </main>
+
+         <footer>
+           <p>&copy;Dibuat oleh Daffi Ramadian</p>
+         </footer>
+
+         <script src="js/script.js"></script>
     </body>
 </html>

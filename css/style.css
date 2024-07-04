@@ -1,1 +1,121 @@
-/* ini CSS
+/* ini CSS */
+
+body{
+    background-color: azure;
+}
+
+main{
+    padding: 32px;
+}
+
+/* Ini navigasi */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+
+
+    /* For Image icon */
+    background-image: url(../assets/Logo\ kucing\ lover.jpg);
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 50%;
+}
+
+nav>a{
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid;
+}
+
+/*Image di banner slide*/
+.images {
+    
+    display: flex;
+    width:100%;
+    transition: 2s;
+}
+
+.images img {
+    width: 100%;
+}
+
+.home-title>h2{
+    border-left: 6px solid cyan;
+}
+
+/* Ini Our Profile */
+.Profile-icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    
+
+
+    /* For Image icon */
+    background-size: cover;
+    border-radius: 50%;
+}    
+
+.profile-1{
+    background-image: url(../assets/kucing3.jpg);
+    
+}
+
+.profile-2{
+    background-image: url(../assets/kucing2.png);
+    
+}
+
+.profile-3{
+    background-image: url(../assets/Kucing1.jpg);
+    
+}
+
+.Profile-item{
+    text-align: center
+    
+}
+
+.profile-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    text-align: -webkit-center;
+}
+
+/*gambar di portofolio*/
+
+.gambar-portofolio {
+    width:100%;
+    display:flex
+
+}
+
+.gambar-portofolio img {
+    width: 100%;
+}
+
+@media screen and (max-width:1020px){
+    .wrapper {
+        width: 90%;
+    }
+    .gambar-portofolio {
+        width:100%;
+    
+    }
+}
+
+/*Kotak untuk hasil dari form*/
+.hasil-data {
+    border: 1px solid;
+    margin-left: 50px;
+    width: 600px;
+}
+    
